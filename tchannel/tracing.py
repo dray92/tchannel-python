@@ -248,7 +248,7 @@ class TChannelOpenTracingClientInterceptor(OpenTracingInterceptor):
     """
 
     @abc.abstractmethod
-    def process(self, span, headers=None, service=None, encoding=None):
+    def process(self, span, request=None, headers=None, service=None, encoding=None):
         """Fire the interceptor."""
         pass
 
